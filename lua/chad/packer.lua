@@ -38,6 +38,7 @@ return require('packer').startup(function(use)
 		  {'hrsh7th/nvim-cmp'},
 		  {'hrsh7th/cmp-nvim-lsp'},
 		  {'L3MON4D3/LuaSnip'},
+          {'mlaursen/vim-react-snippets',}
 	  }
   }
   use {
@@ -49,4 +50,14 @@ return require('packer').startup(function(use)
   use {
 	  "folke/tokyonight.nvim"
   }
+  use {
+      "rebelot/kanagawa.nvim"
+  }
+  use({
+	"L3MON4D3/LuaSnip",
+	-- follow latest release.
+	tag = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+	-- install jsregexp (optional!:).
+	run = "make install_jsregexp"
+})
 end)

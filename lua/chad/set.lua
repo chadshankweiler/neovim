@@ -29,6 +29,6 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
-vim.cmd [[colorscheme tokyonight-night]]
+vim.cmd [[colorscheme kanagawa-dragon]]
 vim.cmd [[hi colorcolumn guibg='#36454F']]
 
